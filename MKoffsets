@@ -1,0 +1,109 @@
+Offsets:
+
+;///////////// R A M /////////////
+$FFFFFF5A ; RAMcheats
+$FFFFAB34 ; RAMreptMode
+$FFFFAC7E ; RAMtimer
+;///////////// R O M /////////////
+$0 ; DAT.header
+
+$200 ; !func.Setup!
+$20e ; func.PortA_Ok
+$22E ; func.SkipSecurity
+$238 ; func.VDPInitLoop
+$24A ; func.WaitForZ80
+$250 ; func.Z80InitLoop
+$25C ; func.ClrRAMLoop
+$268 ; func.ClrCRAMLoop
+$272 ; func.ClrVSRAMLoop
+$27A ; func.PSGInitLoop
+$28C ; !func.EndSetup!
+
+$28E ; DAT.SetupValues
+
+$2FA ; func.RunProgram
+$306 ; func.Reserv3F
+$308 ; func.VBLANK
+$38E ; func.HBLANK
+$3EC ; func.some GFX loader
+$4A6 ; DAT.some GFX loader array
+$51A ; func.kombat zones graphics loader
+$526 ; DAT.kombat zones graphics array
+$542 ; func.kombat zones music loader
+$552 ; DAT.kombat zones music array
+$560 ; func.kombat zones WINmusic loader
+$570 ; DAT.kombat zones WINmusic array
+$57E ; func.KombatZone load GFX - goro's lair
+$622 ; func.KombatZone load GFX - courtyard
+$6FC ; func.KombatZone load GFX - shrine
+$79E ; func.KombatZone load GFX - throne
+$902 ; func.KombatZone load GFX - gates
+$9C0 ; func.KombatZone load GFX - pit
+$B0E ; func.unknown - from $11E96
+$B40 ; func.KombatZone load GFX - bottom
+$BD0 ; func.KombatZone load PALs
+$C0A ; DAT.zone palettes 1
+$C0E ; DAT.zone palettes 2
+$C42 ; DAT.zone palettes (unknown zeros)
+$CD0 ; func.Main inits
+$D44 ; func.fight engine (big mofo :D)
+$11E0 ; DAT.unknown array (7)
+$11FC ; func.unknown - from $11E0
+$1202 ; func.CharSel (DrawChar+CurSFX)
+$12BE ; func.CharSel (DrawChar)
+$12D2 ; func.fight presets
+$16C0 ; uncalled
+$1B94 ; uncalled
+$1CB6 ; uncalled
+$1CE4 ; uncalled
+$1D40 ; uncalled
+$218C ; uncalled
+$21F4 ; uncalled
+$2218 ; uncalled
+$223C ; uncalled
+$2290 ; uncalled
+$26B0 ; uncalled
+$26D6 ; uncalled
+$2736 ; uncalled
+$28FC ; unknown array
+$2904 ; unknown array
+$296E ; unknown array
+$2976 ; arrayCHARS
+$29B4 ; uncalled array
+$2B1C ; unknown 2d array
+$2E50 ; dat.lifebar names array
+$2EE0 ; dat.reptile tips array
+$3006 ; dat.cast of chars text
+$30DC ; dat.cast of bosses text
+$313E ; dat.staff text
+$3378 ; uncalled
+$340A ; unknown array
+$341A ; unknown array
+$3672 ; unknown array
+$36C8 ; unknown array
+$3828 ; unknown array
+$3838 ; unknown array
+$3A80 ; unknown instr.array
+$3A8C ; dat.draw sprites array
+$4446 ; unknown RAM array
+$47CA ; unknown RAM array
+$4A2E ; func.lifebars first draw
+$4A46 ; func.draw lifebar names
+$4AAA ; func.draw shadows
+$4D14 ; uncalled shaddow routine
+$4E5E ; afterfight chars blank
+$4EDE ; gameplay shaddow routine (not demo) LOLWHY
+$7E10 ; func.walk physics
+$80FA ; uncalled
+$81BC ; func.afterfight reactions
+$548C ; func.reptile tips
+$5534 ; func.draw talking reptile
+
+$11E0 ; dat.endings array
+$5698;(won match (goto bio))
+$5708;(cast of bosses)
+$5740;(staff)
+$5778;(gamover)
+$11FC;(battle plan)
+$57B0;(continue?)
+$55F4;(fight)
